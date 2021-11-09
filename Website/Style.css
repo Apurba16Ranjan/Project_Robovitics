@@ -7,7 +7,75 @@
 body {
   font-family: "Roboto Mono";
   font-size: 18px;
+  margin: 0px;
+  padding: 0px;
 }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 1000px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*   text-align: center; */
+}
+@media (min-width: 200px) { body {font-size:0.2rem;} } 
+@media (min-width:320px) { body {font-size:0.8rem;} } 
+@media (min-width:375px) { body {font-size:  1.2rem;} } 
+@media (min-width:900px) { body {font-size:1.5rem;} } 
+
+.row div {
+  
+  display: inline-block;
+  
+  text-align: center;
+
+}
+
+.P1{
+  float:left;
+}
+.clear{
+  clear:both;
+}
+
+.inputs {
+  
+  padding: 12px ;
+  padding-right: 0em;
+  background-color:#ffffffaf;
+  
+  color: #542ab6de;
+  font-family: inherit;
+  text-align: center;
+}
+
+.button {
+  background-color: #d4d1e2;
+  color: #542ab6de; 
+  left: 30; 
+  position: sticky;  
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #542ab6de inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0  #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  
+} 
+.button:active {
+  background-color: #a24fe6a6;
+  top: 4px;
+  box-shadow: 0 0 0 1px #542ab6de inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+ 
+  .button:hover {
+  background-color: #a24fe6a6;
+  positon: relative;
+  top: -1px;
+  box-shadow: 0 0 0 1px #542ab6de inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #333797,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+
 #hero {
   height: 100vh;
   width: 100%;
@@ -16,18 +84,9 @@ body {
       no-repeat center bottom / cover;
   color: whitesmoke;
 }
-.container {
-  width: 100%;
-  height: 100%;
-  max-width: 1000px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  /*   text-align: center; */
-}
+
 .info{
-  padding-left: 60px;
+  padding-left: 20px ;
 }
 #hero .info h1 {
   font-size: 2rem;
@@ -62,16 +121,46 @@ body {
   border-radius: 10px;	
 
 }
-  .button1 {background-color: #d4d1e2; color: #542ab6de; left: 30; position: sticky;  } 
-  .button2 {background-color: #542ab6de; color:#d4d1e2; left: 50; position: sticky; }   
+     
 
+ 
   #plaint {
     width: 100;
-    padding: 12px 20px;
+    padding: 12px ;
+    margin-top: 15px;
+    background-color:#d4d1e2;
+    color: #542ab6de;
+    font-family: inherit;
+    text-align: justify;
+    }
+  #key {
+    width: 100;
+    padding: 12px ;
+    margin-top: 15px;
+    background-color:#d4d1e2;
+    color: #542ab6de;
+    font-family: inherit;
+    text-align: justify;
+  }
+  #key1 {
+    width: 100;
+    padding: 12px ;
+    margin-top: 15px;
+    background-color:#d4d1e2;
+    color: #542ab6de;
+    font-family: inherit;
+    text-align: justify;
+  }
+  #cypher {
+    width: 100;
+    padding: 12px ;
+    margin-top: 15px;
     background-color:#d4d1e2;
     color: #542ab6de;
     font-family: inherit;
     text-align: justify;
 
   }
-  
+  form{
+    float: right!important;
+  }
